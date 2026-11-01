@@ -114,7 +114,7 @@ svg { display: block; }
 .contact .section-head h2 { color: var(--paper); }
 .contact .section-head p { color: rgba(251,250,246,.66); }
 .contact-layout { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 32px; border-top: 1px solid rgba(255,255,255,.2); padding-top: 4px; }
-.contact-details { flex: 1 1 320px; }
+.contact-details { flex: 0 1 620px; min-width: 0; }
 .contact-details a { display: flex; justify-content: space-between; gap: 20px; align-items: center; padding: 18px 0; border-bottom: 1px solid rgba(255,255,255,.2); }
 .contact-details a span { color: rgba(251,250,246,.58); font-size: .75rem; text-transform: uppercase; letter-spacing: .08em; }
 .contact-details strong { font-size: .95rem; font-weight: 600; color: var(--paper); }
@@ -151,6 +151,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--leaf); outline-
   .nav-toggle { display: flex; flex: 0 0 44px; width: 44px; height: 44px; flex-direction: column; align-items: center; justify-content: center; gap: 6px; border: 0; border-radius: 2px; background: transparent; padding: 0; cursor: pointer; }
   .nav-toggle:focus-visible { outline-offset: 2px; }
   .nav { gap: 12px; }
+  .nav > nav { flex: 0 0 0; width: 0; }
   .brand { min-width: 0; }
   .nav-toggle span { width: 23px; height: 1.5px; background: var(--forest); }
   .nav-links { display: none; position: absolute; top: 65px; left: 0; right: 0; padding: 16px 22px 22px; background: var(--paper); border-bottom: 1px solid var(--line); flex-direction: column; align-items: stretch; gap: 0; }
@@ -174,7 +175,9 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--leaf); outline-
   .record-type { grid-column: 1 / -1; }
   .education-records time { grid-column: 2; grid-row: 2; }
   .fieldwork-grid article { grid-template-columns: 76px 1fr; }
-  .contact-layout { flex-direction: column; align-items: stretch; gap: 24px; }
+  .contact-layout { display: flex; flex-direction: column; align-items: stretch; gap: 22px; }
+  .contact-details { flex: none; width: 100%; }
+  .social-row { margin: 0; padding: 0; align-self: flex-start; }
   .contact-details strong { max-width: 62%; overflow-wrap: anywhere; text-align: right; }
   .footer-inner { min-height: 0; display: grid; grid-template-columns: minmax(0,1fr) 36px; align-items: center; gap: 8px 14px; padding-block: 16px; text-align: left; }
   .footer-brand { grid-column: 1; grid-row: 1; min-width: 0; }
